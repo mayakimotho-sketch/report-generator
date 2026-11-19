@@ -1,29 +1,23 @@
-name=input("enter your name")
-print("enter the marks of the following subjects")
-math=int(input("math"))
-eng=int(input("eng"))
-sci=int(input("science"))
-agn=int(input("agn"))
-total=math+eng+sci+agn
-aver=total/4
-if aver>=90:
-    grade="A"
-    comment="Good job"
-elif aver>=70:
-    grade="B"
-    comment="Try harder you are almost there"
-elif aver>=50:
-    grade="C"
-    comment="You can do better"
+name=input("Enter your name")
+time=input("What time do you wake up?")
+clothes=input("How long do you take to wear your clothes?")
+arrival=input("What time do you reach at school?")
+lunch=input("What time do you take your lunch?")
+home=input("What time do you go back home?")
+extra=input("What do you do for leisure?")
+homework=input("How long do you do your homework?")
+if clothes<=15 and time<=5:
+    print("You can go take breakfast now")
+    print("Brush your teeth after breakfast")
 else:
-    grade="D"
-    comment="There is all ways next time"
-print("Student report")
-print("maths:", math)
-print("eng:", eng)
-print("sci:", sci)
-print("agn:", agn)
-print("total marks:",total)
-print("avarege:",aver)
-print("grade:", grade)
-print("Teacher's remarks:", comment)
+    print("You can wake up earlier if your slow")
+if arrival<=7:
+    print("Get to class and start your day")
+else:
+    print("Your late you can do better ext time")
+if not lunch==12:
+    print("It is not lunch stop eating your food")
+else:
+    print("Enjoy your lunch")
+if home>=4 or homework>=1:
+    print("Do your homework before playing")
